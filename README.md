@@ -10,6 +10,6 @@ Com Angular instalado utilize o comando `ng serve`.
 
 1) Ter o tema padrão TwentySeventeen instalado.
 
-2) Criar uma página chamada 'App' e inserir a tag 'app-root' em modo texto nessa página.
+2) Criar uma página chamada 'App' e inserir a tag `<app-root></app-root>` em modo texto nessa página.
 
 3) Definir página 'App' como página inicial do Wordpress em Configurações > Leitura.
