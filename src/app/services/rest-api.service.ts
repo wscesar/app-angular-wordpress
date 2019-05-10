@@ -1,6 +1,6 @@
-import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { WindowService } from './window.service';
+import { Injectable } from '@angular/core'
+import { HttpClient } from '@angular/common/http'
+import { WindowService } from './window.service'
 
 @Injectable()
 export class RestAPIService {
@@ -12,6 +12,14 @@ export class RestAPIService {
   }
   
   getPosts() {
-    return this.http.get(this.api_url + 'posts')
+    return this.http.get( this.api_url + 'posts' )
+  }
+
+  getPost( post_id ) {
+    return this.http.get( this.api_url + 'posts/' + post_id )
+  }
+
+  getPage ( page_id ) {
+    return this.http.get( this.api_url + 'pages/' + page_id )
   }
 }

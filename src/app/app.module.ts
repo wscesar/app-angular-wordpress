@@ -6,14 +6,19 @@ import { AppComponent } from './app.component';
 import { WindowService } from './services/window.service';
 import { RestAPIService } from './services/rest-api.service';
 import { HttpClientModule } from '@angular/common/http';
+
 import { PostListComponent } from './components/post-list/post-list.component';
+import { PostSingleComponent } from './components/post-single/post-single.component';
 import { PostListSingleComponent } from './components/post-list-single/post-list-single.component';
+import { PageComponent } from './components/page/page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PostListComponent,
-    PostListSingleComponent
+    PostSingleComponent,
+    PostListSingleComponent,
+    PageComponent
   ],
   imports: [
     BrowserModule,
